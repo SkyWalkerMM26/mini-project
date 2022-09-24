@@ -38,6 +38,7 @@ body {
     padding: 2px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif  ;
 }
 
@@ -64,7 +65,7 @@ body {
 
 .card h2 {
     position: relative;
-    margin-top: -20px;
+    margin-top: -40px;
     left: 2px;
     background: var(--basic);
     border-radius: 15px;
