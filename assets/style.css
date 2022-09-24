@@ -1,9 +1,15 @@
 * {
    box-sizing: border-box;
-    font-family: Verdana, Tahoma, sans-serif
-
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
 
+html {
+    height: auto;
+}
+ 
 :root {
     --header-color: pink; 
     --media: rgb(9, 71, 34);
@@ -13,6 +19,7 @@
 
 body { 
     background-image: linear-gradient(rgb(105, 123, 214) , orange, rgb(81, 2, 110));
+    height: auto;
     
 }
 
@@ -31,6 +38,7 @@ body {
     padding: 2px;
     margin-left: 200px;
     margin-right: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif  ;
 }
 
 .grid {
@@ -63,6 +71,7 @@ body {
     display: block;
     z-index: 1;
     text-align: center;
+    font-size: 25px;
    
 }
 
@@ -80,14 +89,14 @@ body {
 }
 p {
     display: block;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: -10px;
     margin-left: 0;
     margin-right: 0
    
 }
 
-.snippet {
+.pre {
     display: block;
     border-radius: 8px;
     background-color: var(--media);
@@ -97,13 +106,14 @@ p {
     width: 100%;
     font-size: 13px;
     align-content: center;
-    margin-top: 10px;
+    margin-top: 50px;
   
 
    }
 
 h3 {
     text-align: center;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 992px) {
