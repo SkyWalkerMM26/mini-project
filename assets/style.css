@@ -1,91 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif
+
+}
+
 :root {
     --header-color: pink; 
     --media: rgb(9, 71, 34);
    
 }
 
+body { 
+    background-image: linear-gradient(rgb(105, 123, 214) , orange, rgb(81, 2, 110));
+}
+
 .header {
+    display: block;
     font-size: 80px;
     color: var(--header-color);
     text-align: center;
-    padding: 20px;
+    padding: 5px;
+    margin-top: 50px;
 }
-p {
+
+#hp {
     text-align: center;
- }
+    padding: 2px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
 
 .grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat (12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
 }
 
-.column {
-    display: inline-block;
+.card {
+    padding:2%;
+    display: inline-flex;
     flex-direction: row;
-    background-color: white;
-    box-sizing: border-box;
-    position: relative;
-    width: 400px;
-    height: 250px;
-    margin: 10px;
-    border-style: dashed;
-    flex-wrap: wrap;
-    
-  
-
-   
-}
-
-h2 {
-    display: center;
-    flex-direction: row;
-    background-color: white;
-    box-sizing: border-box;
-    position: realtive;
-    width: 300px;
-    height: 30px;
-    border-radius: 10px;
-    margin-top: -20px;
-    border-style: solid ;
-    text-align: center;
-    padding: 20px;
-   
-
-
-    
-}
-
-.inside {
-    display: center;
-    flex-direction: row;
-    background-color: pink;
-    box-sizing: content-box;
-    position: relative;
-    width: 380px;
-    height: 150px;
-    border-radius: 10px;
     margin: 20px;
-    border-style: solid;
+   max-width: 100%;
+   height: 250px;
+    border: 5px dotted var(--media);
+}
+
+.card h2 {
+    position: relative;
+    margin-top: -20px;
+    left: 2px;
+    background: white;
+    border-radius: 15px;
+    display: block;
+    z-index: 1;
     text-align: center;
     
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+p {
+    display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0
+   
 }
 
 h3 {
     text-align: center;
 }
-@media screen and (max-width: 992px) {
-    .inside {
-      width: 50%;
-    }
-        header {
-            background: car(--media);
-    }
-    @media screen and (max-width: 768px) {
-        .inside {
-          width: 100%;
-        }
-        header {
-            background: var(--media);
-        }
-    }
+
