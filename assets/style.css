@@ -10,27 +10,21 @@
     padding: 20px;
 }
 
-body {
-    text-align: center;
-    font-style: italic;
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (12, 1fr);
 }
 
-.container {
-    position: inline-block;
-    width: 1200px;
-    height: 300px;
-    margin: 240px auto;
-}
-
-.container .box {
+.column {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    box-sizing: content-box;
     position: relative;
-    width: 500px;
-    height: 200px;
-    background: pink;
-    float: left;
+    width: 400px;
+    height: 300px;
+    border-radius: 40px;
+    display: inline-block;
     margin: 15px;
-    box-sizing: border box;
-    overflow: hidden;
-    border-radius: 10px;
-    flex-wrap: wrap-reverse;
-}
